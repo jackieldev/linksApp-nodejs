@@ -2,7 +2,7 @@
 
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-const dbPath = path.resolve(__dirname, path.resolve('database'), 'app_db.sqlite3')
+const dbPath = path.resolve(__dirname, 'app_db.sqlite3')
 
 let db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
