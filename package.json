@@ -4,7 +4,8 @@
   "description": "Links App in NodeJs",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/"
+    "dev": "nodemon src/",
+    "publish": "./node_modules/.bin/gh-pages -d dist/ -d dist/"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "timeago.js": "^4.0.2"
   },
   "devDependencies": {
+    "gh-pages": "^3.1.0",
     "nodemon": "^2.0.4"
   }
 }
