@@ -1,15 +1,20 @@
 {
   "name": "linksApp-nodejs",
   "version": "1.0.0",
-  "description": "Links App in NodeJs",
+  "description": "Aplicativo para salvar links em NodeJs",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/",
-    "publish": "./node_modules/.bin/gh-pages -d dist/ -d dist/"
+    "publish": "./node_modules/.bin/gh-pages -d dist/ -d dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackieldev/linksApp-nodejs.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jackiel Mezzaroba",
+  "license": "MIT",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
